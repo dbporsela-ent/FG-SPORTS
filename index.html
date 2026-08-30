@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porsela Legok Entertainment — Photography & Event</title>
+  <meta name="description" content="Porsela Legok Entertainment — dokumentasi photography untuk event olahraga dan hiburan.">
+
+  <!-- Typography: Anton (display, condensed sporty) + Manrope (body, humanist clean) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAVBAR ===================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner container">
+      <a href="#top" class="logo" aria-label="Porsela Legok Entertainment — Beranda">
+        <span class="logo-mark">PS</span>
+        <span class="logo-text">
+          <strong>PORSELA SPORTS</strong>
+          <em>Sports Photography</em>
+        </span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Navigasi utama">
+        <a href="#booking" class="nav-link">BOOKING</a>
+        <a href="#photography" class="nav-link">PROJECT</a>
+      </nav>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Buka menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="nav-mobile" id="mobileMenu" aria-label="Navigasi mobile">
+      <a href="#booking" class="nav-link-mobile">BOOKING</a>
+      <a href="#photography" class="nav-link-mobile">PROJECT</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ===================== HERO / IMAGE SLIDER ===================== -->
+    <section class="hero" aria-label="Galeri foto unggulan">
+      <div class="slider" id="slider">
+        <div class="slider-track" id="sliderTrack">
+          <!-- Slides are injected by script.js from the `slides` array -->
+        </div>
+
+        <button class="slider-arrow slider-arrow--prev" id="prevBtn" aria-label="Foto sebelumnya">
+          <span aria-hidden="true">&#8249;</span>
+        </button>
+        <button class="slider-arrow slider-arrow--next" id="nextBtn" aria-label="Foto berikutnya">
+          <span aria-hidden="true">&#8250;</span>
+        </button>
+
+        <div class="slider-dots" id="sliderDots" role="tablist" aria-label="Pilih slide"></div>
+      </div>
+    </section>
+
+    <!-- ===================== SIGNATURE: EVENT TICKER ===================== -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>PORSELA CUP</span><span>&#9679;</span>
+      </div>
+    </div>
+
+    <!-- ===================== BOOKING / CONTACT SECTION ===================== -->
+    <section class="booking" id="booking">
+      <div class="container">
+        <p class="eyebrow eyebrow--light">HUBUNGI KAMI</p>
+        <h2 class="section-title">BOOKING</h2>
+        <p class="section-sub">Siap mendokumentasikan momen terbaik dari eventmu. Pilih kanal di bawah untuk mulai booking.</p>
+
+        <div class="contact-grid">
+          <a class="contact-card" href="https://wa.me/XXXXXXXXXXX" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+            </span>
+            <span class="contact-label">WhatsApp</span>
+            <span class="contact-arrow" aria-hidden="true">&#8594;</span>
+          </a>
+          <a class="contact-card" href="https://instagram.com/USERNAME" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </span>
+            <span class="contact-label">Instagram</span>
+            <span class="contact-arrow" aria-hidden="true">&#8594;</span>
+          </a>
+          <a class="contact-card" href="https://facebook.com/USERNAME" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </span>
+            <span class="contact-label">Facebook</span>
+            <span class="contact-arrow" aria-hidden="true">&#8594;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LINK PHOTOGRAPHY ===================== -->
+    <section class="photography" id="photography">
+      <div class="container">
+        <p class="eyebrow">PROJECT</p>
+        <h2 class="section-title section-title--dark">LINK PHOTOGRAPHY</h2>
+        <p class="section-sub section-sub--dark">Klik salah satu koleksi untuk melihat hasil photography.</p>
+
+        <div class="photo-grid" id="photoGrid">
+          <!-- Cards are injected by script.js from the `photoCollections` array -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark logo-mark--footer">PL</span>
+        <div>
+          <p class="footer-title">PORSELA LEGOK ENTERTAINMENT</p>
+          <p class="footer-tagline">Photography &bull; Entertainment &bull; Event</p>
+        </div>
+      </div>
+
+      <div class="footer-social" aria-label="Sosial media">
+        <a href="https://wa.me/XXXXXXXXXXX" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+        </a>
+        <a href="https://instagram.com/USERNAME" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+        </a>
+        <a href="https://facebook.com/USERNAME" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+
+      <p class="footer-copy">&copy; 2026 Porsela Legok Entertainment. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
